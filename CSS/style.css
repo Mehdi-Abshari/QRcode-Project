@@ -1,0 +1,84 @@
+/* 
+    Title: QR Code Project Css;
+    Versson: 0.0.1;
+    Developer: Mehdi Abshari;
+    Modified Date: 1401-08-04;
+*/
+
+/* Srart of fonts */
+@font-face {
+  font-family: Sans-arabic;
+  src: url("../Fonts/NotoSansArabic-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: Lalezar;
+  src: url("../Fonts/Lalezar-Regular.ttf") format("truetype");
+}
+/* End of fonts */
+
+/* Start of All Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sans-arabic", Tahoma;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b953d1;
+}
+/* End of All Selector */
+
+/* Start of container */
+.container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+/* End of container */
+
+/* Start of info */
+.container .info h1 {
+  font-family: "Lalezar", Tahoma;
+}
+/* End of info */
+
+/* Start of form */
+.container form {
+  margin: 15px 0 25px;
+}
+.container form :where(input, button) {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+.container form input {
+  border: 1px solid #999;
+}
+.container form button {
+  background-color: #b953d1;
+  color: #fff;
+  cursor: pointer;
+}
+/* End of form */
+
+/* Start of qr code */
+.container .qr-code {
+  border: 1px solid #999;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+.container .hidden {
+  display: none;
+}
+/* End of qr code */
